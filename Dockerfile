@@ -8,4 +8,4 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
 RUN apk add --no-cache bird
 
 ENTRYPOINT ["/opt/bird-wrapper.sh"]
-CMD ["/usr/sbin/birdc"]
+CMD ["/bin/sh"]
